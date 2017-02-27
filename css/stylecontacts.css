@@ -1,0 +1,86 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:700,400);
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Montserrat, sans-serif;
+	text-align: center;
+ }
+
+ 
+ #background
+{
+	display: block;
+	background-color: #f4f4f4;
+	background-size: auto;
+	left: 0px;
+	top: 0px;
+	position:fixed;
+	height: 100%;
+	width: 100%;
+	z-index:0;
+}
+
+#title
+{
+	font-size: 30px;
+	display: block;
+	height:auto;
+	width:100%;
+	left: 0;
+	position: absolute;
+	text-align: center;
+	font-weight:bold;
+	top:3vh;
+}
+
+#contactlink
+{
+	font-size: 15px;
+	display: block;
+	height:auto;
+	width:100%;
+	left: 0;
+	position:relative;
+	text-align: center;
+	top:60px;
+}
+
+#linkblock
+{
+	position: relative;
+	vertical-align: middle;
+	height: 30px;
+}
+
+/*Paragraph*/
+ p{
+	position:relative;
+	padding-left: 70px;
+	padding-right: 70px;
+	padding-top: 10px;
+	margin: auto;
+	font-size: 16px;
+	text-align: justify;
+ }
+
+p:first-letter {
+	float: left;
+	//color: #903;
+	font-size: 50px;
+	line-height: 40px;
+	padding-top: 3px;
+	padding-right: 8px;
+	padding-left: 3px;
+}
+
+/**/
+
+
+#icons
+{
+	display: inline-block;
+	position: relative;
+	padding: 10px;
+	
+}
