@@ -30,19 +30,19 @@
 				<!-- Header -->
 					<header id="header">
 						<div class="container-fluid" >
-							<img class="img-thumbnail" src="images/logo.png" id="mainLogo" style="background: transparent; border-width: 0">
+							<img class="img-thumbnail" src="images/logo.png" alt="images/logo.png" id="mainLogo" style="background: transparent; border-width: 0;">
 						</div>
 
 						<nav>
 							<ul>
-								<li><a href="#"><img src="images/1.png" id="icon1" style="width:90%; height:90%;"></a></li>
-								<li><a href="#"><img src="images/2.png" id="icon2" style="width:90%; height:90%;"></a></li>
-								<li><a href="#"><img src="images/3.png" id="icon3" style="width:90%; height:90%;"></a></li>
+								<li><a href="#"><img src="images/1.png" alt="images/1.png" id="icon1" style="width:90%; height:90%;"></a></li>
+								<li><a href="#"><img src="images/2.png" alt="images/2.png" id="icon2" style="width:90%; height:90%;"></a></li>
+								<li><a href="#"><img src="images/3.png" alt="images/3.png" id="icon3" style="width:90%; height:90%;"></a></li>
 							</ul>
 
 							<ul>
-								<li><img src="images/logo1.png" style="width:100%; height:100%;"></li>
-								<li><img src="images/logo2.png" style="width:90%; height:100%;"></li>
+								<li><img src="images/logo1.png" alt="images/logo1.png" style="width:100%; height:100%;"></li>
+								<li><img src="images/logo2.png" alt="images/logo2.png" style="width:90%; height:100%;"></li>
 							</ul>
 						</nav>
 					</header>
@@ -54,26 +54,24 @@
 			</div>
 			<!--close button-->
 			<div id="closebtn" class="closebutton">
-				<input type="image" src="images/close.png" id="btnclose" style="width:100%; height:100%;">
+				<input type="image" src="images/close.png" alt="images/close.png" id="btnclose" style="width:100%; height:100%;">
 			</div>
 
 			<!--Google form-->
 			<div id="pops" class="popup">
-			<iframe src="https://goo.gl/forms/FvGI1t7RiwTrdjLB3" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+				<iframe src="https://goo.gl/forms/FvGI1t7RiwTrdjLB3" style="width: 100%; height: 100%;" ></iframe>
 			</div>
 
 			<!--PAGES-->
 			<div id="aboutpage" class="popwindow">
-					<iframe src="about.html" id="iframez" frameborder="0" marginheight="0" marginwidth="0" scrolling="yes"></iframe>
+					<iframe src="about.html" class="iframez"></iframe>
 			</div>
 
 			<div id="contactpage" class="popwindow">
-					<iframe src="contacts.html" id="iframez" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+					<iframe src="contacts.html" class="iframez"></iframe>
 			</div>
 		</div>
-
-
-
+		
 		<script src="js/jquery.min.js"></script>
 		<script src="js/skel.min.js"></script>
 		<script src="js/init.js"></script>
@@ -83,82 +81,6 @@
 		<script src="js/easing/EasePack.min.js"></script>
 		<script src="js/jquery.countdown.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-
-		<script>
-			$(window).load(function() {
-			$(".spinner").fadeOut(2000);
-			})
-			//click icon 1
-			$('#icon1').click(function()
-								{
-									$('#overlaypage').css('display', 'block');
-									$('#pops').css('display', 'block');
-									$('#closebtn').css('display', 'block');
-									TweenMax.from($('#pops'), 2, { scaleX:0.5, scaleY:0.5, alpha:0, ease:Elastic.easeOut});
-									TweenMax.from($('#btnclose'), 1 , {scaleX:0, scaleY:0, ease:Elastic.easeOut});
-								});
-
-			$('#icon2').click(function()
-								{
-									$('#overlaypage').css('display', 'block');
-									$('#aboutpage').css('display', 'block');
-									$('#closebtn').css('display', 'block');
-									TweenMax.from($('#aboutpage'), 2, { scaleX:0.5, scaleY:0.5, alpha:0, ease:Elastic.easeOut});
-									TweenMax.from($('#btnclose'), 1 , {scaleX:0, scaleY:0, ease:Elastic.easeOut});
-								});
-
-
-			$('#icon3').click(function()
-								{
-									$('#overlaypage').css('display', 'block');
-									$('#contactpage').css('display', 'block');
-									$('#closebtn').css('display', 'block');
-									TweenMax.from($('#contactpage'), 2, { scaleX:0.5, scaleY:0.5, alpha:0, ease:Elastic.easeOut});
-									TweenMax.from($('#btnclose'), 1 , {scaleX:0, scaleY:0, ease:Elastic.easeOut});
-								});
-
-
-			//Click the close button
-			$('#btnclose').click(function()
-								{
-									$('#overlaypage').css('display', 'block');
-									$('#pops').css('display', 'none');
-									$('#contactpage').css('display', 'none');
-									$('#newspage').css('display', 'none');
-									$('#aboutpage').css('display', 'none');
-									$('#closebtn').css('display', 'none');
-									$('#overlaypage').css('display', 'none');
-								});
-
-			$('#overlaypage').click(function()
-								{
-									$('#pops').css('display', 'none');
-									$('#overlaypage').css('display', 'none');
-									$('#contactpage').css('display', 'none');
-									$('#newspage').css('display', 'none');
-									$('#aboutpage').css('display', 'none');
-									$('#closebtn').css('display', 'none');
-								});
-
-			//button popup
-
-			$('#icon1').mouseover(function(){TweenMax.to($('#icon1'), 1 , {scaleX:1.15, scaleY:1.15, ease:Elastic.easeOut});});
-			$('#icon2').mouseover(function(){TweenMax.to($('#icon2'), 1 , {scaleX:1.15, scaleY:1.15, ease:Elastic.easeOut});});
-			$('#icon3').mouseover(function(){TweenMax.to($('#icon3'), 1 , {scaleX:1.15, scaleY:1.15, ease:Elastic.easeOut});});
-			$('#icon4').mouseover(function(){TweenMax.to($('#icon4'), 1 , {scaleX:1.1, scaleY:1.15, ease:Elastic.easeOut});});
-			$('#btnclose').mouseover(function(){TweenMax.to($('#btnclose'), 1 , {scaleX:1.35, scaleY:1.35, ease:Strong.easeOut});});
-
-			$('#icon1').mouseout(function(){TweenMax.to($('#icon1'), 1 , {scaleX:1, scaleY:1, ease:Elastic.easeOut});});
-			$('#icon2').mouseout(function(){TweenMax.to($('#icon2'), 1 , {scaleX:1, scaleY:1, ease:Elastic.easeOut});});
-			$('#icon3').mouseout(function(){TweenMax.to($('#icon3'), 1 , {scaleX:1, scaleY:1, ease:Elastic.easeOut});});
-			$('#icon4').mouseout(function(){TweenMax.to($('#icon4'), 1 , {scaleX:1, scaleY:1, ease:Elastic.easeOut});});
-			$('#btnclose').mouseout(function(){TweenMax.to($('#btnclose'), 1 , {scaleX:1, scaleY:1, ease:Strong.easeOut});});
-
-			var r = document.getElementById("icon1");
-			var pop = document.getElementById("pops");
-			var lols = document.getElementById("icon2");
-			var lols3 = document.getElementById("icon3");
-			var logo = document.getElementById("mainLogo");
-		</script>
+		<script src="js/style.js"></script>
 	</body>
 </html>
