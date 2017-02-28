@@ -17,50 +17,45 @@
 
 	<body>
 		<div class="spinner"></div>
-		<div id="wrapper">
-			<div id="bg"></div>
-			<div id="overlay"></div>
-			<div id="overlaypage" class="overlaypageclass"></div>
-			<div>
-				<!-- Header -->
-					<header id="header">
-						<div class="container-fluid" >
-							<img class="img-thumbnail" src="images/logo.png" alt="images/logo.png" id="mainLogo" style="background: transparent; border-width: 0;">
-						</div>
-						<nav>
-							<ul>
-								<li><a href="#"><img src="images/1.png" alt="images/1.png" id="icon1" style="width:90%; height:90%;"></a></li>
-								<li><a href="#"><img src="images/2.png" alt="images/2.png" id="icon2" style="width:90%; height:90%;"></a></li>
-								<li><a href="#"><img src="images/3.png" alt="images/3.png" id="icon3" style="width:90%; height:90%;"></a></li>
-							</ul>
-						</nav>
-
-						<nav>
-							<ul>
-								<li><img src="images/logo1.png" alt="images/logo1.png" style="width:100%; height:100%;"></li>
-								<li><img src="images/logo2.png" alt="images/logo2.png" style="width:90%; height:100%;"></li>
-							</ul>
-						</nav>
-					</header>
-				<!-- Footer -->
-					<footer id="footer">
-						© Classical Music Society - University of Moratuwa
-					</footer>
+		<div class="wrapper">
+			<div class="bg"></div>
+			<div class="overlay"></div>
+			<div class="overlay-page" id="overlaypage" ></div>
+			<!-- Header -->
+			<div class="header-content">
+				<div class="container-fluid" >
+					<img class="img-thumbnail" src="images/logo.png" alt="images/logo.png" class="mainLogo" style="background: transparent; border-width: 0;">
+				</div>
+				<nav>
+					<ul>
+						<li><a href="#"><img class="icons" src="images/1.png" alt="images/1.png" id="icon1"></a></li>
+						<li><a href="#"><img class="icons" src="images/2.png" alt="images/2.png" id="icon2"></a></li>
+						<li><a href="#"><img class="icons" src="images/3.png" alt="images/3.png" id="icon3"></a></li>
+						<br>
+						<li><img class="icons" src="images/logo1.png" alt="images/logo1.png"></li>
+						<li><img class="icons" src="images/logo2.png" alt="images/logo2.png"></li>
+					</ul>
+				</nav>
 			</div>
+
+			<!-- Footer -->
+			<footer class="footer">
+				<div>© Classical Music Society - University of Moratuwa </div>
+			</footer>
 			<!--close button-->
-			<div id="closebtn" class="closebutton">
-				<input type="image" src="images/close.png" alt="images/close.png" id="btnclose" style="width:100%; height:100%;">
+			<div>
+				<input id="closebtn" class="closebutton" type="image" src="images/close.png" alt="images/close.png">
 			</div>
 			<!--Google form-->
-			<div id="pops" class="popup">
-				<iframe src="https://goo.gl/forms/FvGI1t7RiwTrdjLB3" style="width: 100%; height: 100%;" ></iframe>
+			<div class="popup" id="pops">
+				<iframe class="frame" src="https://goo.gl/forms/FvGI1t7RiwTrdjLB3"></iframe>
 			</div>
 			<!--PAGES-->
-			<div id="aboutpage" class="popwindow">
-					<iframe src="about.html" class="iframez"></iframe>
+			<div class="popup" id="aboutpage" >
+				<iframe class="frame" src="about.html"></iframe>
 			</div>
-			<div id="contactpage" class="popwindow">
-					<iframe src="contacts.html" class="iframez"></iframe>
+			<div class="popup" id="contactpage">
+				<iframe class="frame" src="contacts.html"></iframe>
 			</div>
 		</div>
 		<!-- Scripts -->
