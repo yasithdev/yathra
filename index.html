@@ -17,23 +17,35 @@
 
 	<body>
 		<div class="spinner"></div>
-		<div class="wrapper">
+		<div class="wrapper theme-ice">
 			<div class="bg"></div>
 			<div class="overlay"></div>
 			<div class="overlay-page" id="overlaypage" ></div>
+
+				<!-- Background container -->
+	        <div id="background-container" class="background-container">
+	            <div id="background-output" class="background-output"></div>
+	            <div id="vignette" class="background-vignette"></div>
+	            <div id="noise" class="background-noise"></div>
+	        </div>
+	        <!-- /Background container -->
+
 			<!-- Header -->
 			<div class="header-content">
 				<div class="container-fluid" >
-					<img class="img-thumbnail" src="images/logo.png" alt="images/logo.png" class="mainLogo" style="background: transparent; border-width: 0;">
+					<img class="img-thumbnail" src="images/logo.png" alt="images/logo.png" class="logo" style="background: transparent; border-width: 0;">
 				</div>
 				<nav>
 					<ul>
-						<li><a href="#"><img class="icons" src="images/1.png" alt="images/1.png" id="icon1"></a></li>
-						<li><a href="#"><img class="icons" src="images/2.png" alt="images/2.png" id="icon2"></a></li>
-						<li><a href="#"><img class="icons" src="images/3.png" alt="images/3.png" id="icon3"></a></li>
-						<br>
-						<li><img class="icons" src="images/logo1.png" alt="images/logo1.png"></li>
-						<li><img class="icons" src="images/logo2.png" alt="images/logo2.png"></li>
+						<li><a href="#"><img class="icon" src="images/1.png" alt="images/1.png" id="icon1"></a></li>
+						<li><a href="#"><img class="icon" src="images/2.png" alt="images/2.png" id="icon2"></a></li>
+						<li><a href="#"><img class="icon" src="images/3.png" alt="images/3.png" id="icon3"></a></li>
+					</ul>
+				</nav>
+				<nav>
+					<ul>
+						<li><img class="icon" src="images/logo1.png" alt="images/logo1.png" style="left:0;"></li>
+						<li><img class="icon" src="images/logo2.png" alt="images/logo2.png" style="right:0;"></li>
 					</ul>
 				</nav>
 			</div>
@@ -60,8 +72,12 @@
 		</div>
 		<!-- Scripts -->
 		<script src="js/jquery.min.js"></script>
-		<script src="js/TweenMax.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
+		
+		<script src="js/TweenMax.min.js"></script>
 		<script src="js/style.js"></script>
+		<script src="js/config.js"></script>
+		<script src="js/fss.js"></script>
+		<script src="js/shader.js"></script>
 	</body>
 </html>

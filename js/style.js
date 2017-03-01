@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(window).ready(function() {
 	$(".spinner").fadeOut(2000);
 	$(".header-content").fadeIn(2000);
 });

@@ -1,5 +1,5 @@
-body{margin:0;padding:0;}
-#background{display:block;background-color:#f4f4f4;background-size:auto;left:0;top:0;position:fixed;height:100%;width:100%;z-index:0;}
+body{margin:0;padding:0;background-color:rgba(255,255,255,.5);}
+#background{display:block;background-color:rgba(255,255,255,.5);background-size:auto;left:0;top:0;position:fixed;height:100%;width:100%;z-index:0;}
 #title{font-size:30px;display:block;height:auto;width:100%;left:0;position:absolute;text-align:center;font-weight:700;top:3vh;}
 #contactlink{font-size:15px;display:block;height:auto;width:100%;left:0;position:relative;text-align:center;top:60px;}
 #linkblock{position:relative;display:inline-table;vertical-align:middle;height:30px;}
