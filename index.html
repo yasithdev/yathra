@@ -15,45 +15,50 @@
 		</noscript>
 	</head>
 
-	<body>
+	<body class="theme-peack">
+		<!-- Loading Animation -->
 		<div class="spinner"></div>
-		<div class="wrapper theme-ice">
-			<div class="bg"></div>
-			<div class="overlay"></div>
-			<div class="overlay-page" id="overlaypage" ></div>
+		<!-- /Loading Animation -->
 
-				<!-- Background container -->
-	        <div id="background-container" class="background-container">
-	            <div id="background-output" class="background-output"></div>
-	            <div id="vignette" class="background-vignette"></div>
-	            <div id="noise" class="background-noise"></div>
-	        </div>
-	        <!-- /Background container -->
-
-			<!-- Header -->
-			<div class="header-content">
-				<div class="container-fluid" >
-					<img class="img-thumbnail" src="images/logo.png" alt="images/logo.png" class="logo" style="background: transparent; border-width: 0;">
-				</div>
-				<nav>
-					<ul>
-						<li><a href="#"><img class="icon" src="images/1.png" alt="images/1.png" id="icon1"></a></li>
-						<li><a href="#"><img class="icon" src="images/2.png" alt="images/2.png" id="icon2"></a></li>
-						<li><a href="#"><img class="icon" src="images/3.png" alt="images/3.png" id="icon3"></a></li>
-					</ul>
-				</nav>
-				<nav>
-					<ul>
-						<li><img class="icon" src="images/logo1.png" alt="images/logo1.png" style="left:0;"></li>
-						<li><img class="icon" src="images/logo2.png" alt="images/logo2.png" style="right:0;"></li>
-					</ul>
-				</nav>
+		<!-- Background -->
+        <div id="background-container" class="background-container">
+			<div class="background-image"></div>
+			<div class="background-overlay"></div>
+            <div id="background-output" class="background-output"></div>
+            <div id="vignette" class="background-vignette"></div>
+            <div id="noise" class="background-noise"></div>
+        </div>
+        <!-- /Background -->
+		
+		<!-- Header and Content -->
+		<div class="header-content">
+			<div class="container-fluid" >
+				<img class="img-thumbnail" src="images/logo.png" alt="images/logo.png" class="logo" style="background: transparent; border-width: 0;">
 			</div>
+			<nav>
+				<ul>
+					<li><a href="#"><img class="icon" src="images/1.png" alt="images/1.png" id="icon1"></a></li>
+					<li><a href="#"><img class="icon" src="images/2.png" alt="images/2.png" id="icon2"></a></li>
+					<li><a href="#"><img class="icon" src="images/3.png" alt="images/3.png" id="icon3"></a></li>
+				</ul>
+			</nav>
+			<nav>
+				<ul>
+					<li><img class="icon" src="images/logo1.png" alt="images/logo1.png" style="left:0;"></li>
+					<li><img class="icon" src="images/logo2.png" alt="images/logo2.png" style="right:0;"></li>
+				</ul>
+			</nav>
+		</div>
+		<!-- /Header and Content -->
 
-			<!-- Footer -->
-			<footer class="footer">
-				<div>© Classical Music Society - University of Moratuwa </div>
-			</footer>
+		<!-- Footer -->
+		<footer class="container footer">
+			<div>© Classical Music Society - University of Moratuwa </div>
+		</footer>
+		<!-- /Footer -->
+
+		<!-- Navigation Buttons -->
+		<div class="container">
 			<!--close button-->
 			<div>
 				<input id="closebtn" class="closebutton" type="image" src="images/close.png" alt="images/close.png">
@@ -70,14 +75,16 @@
 				<iframe class="frame" src="contacts.html"></iframe>
 			</div>
 		</div>
+		<!-- /Navigation Buttons -->
+
 		<!-- Scripts -->
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-		
 		<script src="js/TweenMax.min.js"></script>
 		<script src="js/style.js"></script>
 		<script src="js/config.js"></script>
 		<script src="js/fss.js"></script>
 		<script src="js/shader.js"></script>
+		<!-- /Scripts -->
 	</body>
 </html>
